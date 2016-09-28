@@ -1,5 +1,14 @@
 'use strict';
 
 module.exports = function(/* environment, appConfig */) {
-  return { };
+  return {
+    emberResponsiveDefaults: {
+      injectionFactories: [
+        'route',
+        'component',
+        'controller',
+        'view'
+      ]
+    }
+  };
 };
